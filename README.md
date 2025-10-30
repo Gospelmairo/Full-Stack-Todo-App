@@ -80,8 +80,7 @@ python manage.py migrate
 
 # 6. Run the development server
 python manage.py runserver
-
-``bash
+```
 
 **API Base URL:**  
 `http://127.0.0.1:8000/api/tasks/`
@@ -93,8 +92,9 @@ python manage.py runserver
   "title": "Complete full-stack project",
   "completed": false
 }
+```
 
-⚛️ Frontend Setup (Vite + Redux Toolkit + TypeScript)
+## Frontend Setup (Vite + Redux Toolkit + TypeScript)
 # 1. Create a new Vite + React + TypeScript app
 npm create vite@latest frontend -- --template react-ts
 cd frontend
@@ -106,10 +106,10 @@ npm install @reduxjs/toolkit react-redux axios
 npm run dev
 
 
-Frontend runs on:
+## Frontend runs on:
 http://localhost:5173
 
-🔌 Connecting Frontend and Backend
+## Connecting Frontend and Backend
 
 Inside your Redux slice or RTK Query service:
 // example apiSlice.ts
@@ -141,8 +141,9 @@ export const api = createApi({
 export const { useGetTasksQuery, useAddTaskMutation, useDeleteTaskMutation } = api
 
 This setup allows automatic caching, re-fetching, and optimistic updates — no manual state management required.
+---
 
-🧱 Folder Structure
+##  Folder Structure
 taskflow/
 ├── backend/
 │   ├── backend/
@@ -162,7 +163,7 @@ taskflow/
     └── package.json
 
 
-🧠 How It Works (Simplified)
+##  How It Works (Simplified)
 
 User opens the React frontend
 
@@ -180,7 +181,7 @@ RTK Query automatically updates the cache
 
 The page updates instantly without manual reload
 
-💡 Example Flow
+### Example Flow
 
 Run Django server
 python manage.py runserver
@@ -194,7 +195,7 @@ Open the app at
 
 Add tasks, delete them, and see everything update live!
 
-🧩 Example API Endpoints
+## Example API Endpoints
 | Method   | Endpoint          | Description     |
 | -------- | ----------------- | --------------- |
 | `GET`    | `/api/tasks/`     | Fetch all tasks |
@@ -202,7 +203,7 @@ Add tasks, delete them, and see everything update live!
 | `DELETE` | `/api/tasks/:id/` | Delete a task   |
 
 
-🧑‍💻 Author
+### Author
 
 Mairo Gospel
 Data Engineer / DevOps Engineer
@@ -212,7 +213,7 @@ Data Engineer / DevOps Engineer
  • GitHub
 
 
- 🏁 Summary
+## Summary
 
 TaskFlow is a proof-of-concept app demonstrating full-stack development skills — showing your ability to:
 
