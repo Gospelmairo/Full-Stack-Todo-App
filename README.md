@@ -79,7 +79,7 @@ python manage.py startapp todos
 python manage.py migrate
 
 # 6. Run the development server
-python manage.py runserver
+python manage.py runserver8000
 ```
 
 **API Base URL:**  
@@ -142,6 +142,7 @@ export const api = createApi({
     }),
   }),
 })
+```
 
 export const { useGetTasksQuery, useAddTaskMutation, useDeleteTaskMutation } = api
 
@@ -171,21 +172,21 @@ taskflow/
 
 
 ##  How It Works (Simplified)
-User opens the React frontend
+- User opens the React frontend
 
-The app requests data from the Django API (GET /api/tasks/)
+- The app requests data from the Django API (GET /api/tasks/)
 
-Tasks are stored in Redux Toolkit state via RTK Query
+- Tasks are stored in Redux Toolkit state via RTK Query
 
-When a user adds a new task:
+- When a user adds a new task:
 
-The frontend sends a POST request
+- The frontend sends a POST request
 
-The backend saves it to the database
+- The backend saves it to the database
 
-RTK Query automatically updates the cache
+- RTK Query automatically updates the cache
 
-The page updates instantly without manual reload
+- The page updates instantly without manual reload
 
 ### Example Flow
 
