@@ -4,6 +4,15 @@
 
 TaskFlow is a minimalist full stack **task management app** built to demonstrate a clean architecture between an **async Django backend (via ADRF)** and a **modern React + Vite + TypeScript frontend** using **Redux Toolkit Query** for data fetching and caching.
 
+## Screenshots
+
+### App Dashboard
+![App Dashboard](images/screenshot1.png)
+
+### Todo List View
+![Todo List View](images/screenshot2.png)
+
+
 It’s a small productivity app that demonstrates:
 
 -  **Backend:** A Django + ADRF REST API (async) that stores and serves “tasks.”
