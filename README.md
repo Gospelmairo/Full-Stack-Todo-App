@@ -213,11 +213,10 @@ Add tasks, delete them, and see everything update live!
 
 
 ### Author
-
 Mairo Gospel
 Data Engineer / DevOps Engineer
 📧 [gospelmairo@gmail.com]
----
+
 
 
 ## Summary
