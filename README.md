@@ -95,29 +95,31 @@ python manage.py runserver
 ```
 
 ## Frontend Setup (Vite + Redux Toolkit + TypeScript)
-# 1. Create a new Vite + React + TypeScript app
+### 1. Create a new Vite + React + TypeScript app
 npm create vite@latest frontend -- --template react-ts
 cd frontend
 
-# 2. Install dependencies
+### 2. Install dependencies
 npm install @reduxjs/toolkit react-redux axios
 
-# 3. Start the development server
+### 3. Start the development server
 npm run dev
 
 
 ## Frontend runs on:
 http://localhost:5173
 
-## Connecting Frontend and Backend
+##  Connecting Frontend and Backend
 
-Inside your Redux slice or RTK Query service:
+Inside your Redux slice or RTK Query service, you set the base URL to point to your Django API:
+
+```typescript
 // example apiSlice.ts
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 export const api = createApi({
   reducerPath: 'api',
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://127.0.0.1:8000/api/' }),
+  baseQuery: fetchBaseQuery({ baseUrl: '[http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api/)' }),
   endpoints: (builder) => ({
     getTasks: builder.query({
       query: () => 'tasks/',
@@ -164,21 +166,13 @@ taskflow/
 
 
 ##  How It Works (Simplified)
-
 User opens the React frontend
-
 The app requests data from the Django API (GET /api/tasks/)
-
 Tasks are stored in Redux Toolkit state via RTK Query
-
 When a user adds a new task:
-
 The frontend sends a POST request
-
 The backend saves it to the database
-
 RTK Query automatically updates the cache
-
 The page updates instantly without manual reload
 
 ### Example Flow
