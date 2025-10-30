@@ -1,8 +1,8 @@
-# Full-Stack-Todo-App
+# Full Stack Todo App
 
 # ✅ TaskFlow — Full-Stack Task Management App
 
-TaskFlow is a minimalist full-stack **task management app** built to demonstrate a clean architecture between an **async Django backend (via ADRF)** and a **modern React + Vite + TypeScript frontend** using **Redux Toolkit Query** for data fetching and caching.
+TaskFlow is a minimalist full stack **task management app** built to demonstrate a clean architecture between an **async Django backend (via ADRF)** and a **modern React + Vite + TypeScript frontend** using **Redux Toolkit Query** for data fetching and caching.
 
 It’s a small productivity app that demonstrates:
 
@@ -12,10 +12,10 @@ It’s a small productivity app that demonstrates:
 
 So while it behaves like a simple to-do or task manager, it’s actually a **proof-of-concept full-stack project** that shows:
 
--  You understand API creation with Django/DRF/ADRF.  
--  You can consume REST APIs from a modern frontend.  
--  You can use Redux Toolkit & RTK Query for state management.  
--  You can integrate CORS, environment configs, async APIs, and CRUD operations end-to-end.
+-  I understand API creation with Django/DRF/ADRF.  
+-  I can consume REST APIs from a modern frontend.  
+-  I can use Redux Toolkit & RTK Query for state management.  
+-  I can integrate CORS, environment configs, async APIs, and CRUD operations end-to-end.
 
 ---
 
@@ -24,7 +24,7 @@ So while it behaves like a simple to-do or task manager, it’s actually a **pro
 TaskFlow demonstrates how a **modern frontend and backend** can communicate efficiently using REST APIs.  
 The backend exposes a `/api/tasks/` endpoint for CRUD operations, and the frontend uses **Redux Toolkit Query** to handle data fetching and caching automatically.
 
-The result is a lightweight but production-style setup for **learning, interviews, or portfolio display**.
+The result is a lightweight but production style setup for **learning, interviews, or portfolio display**.
 
 ---
 
@@ -53,7 +53,7 @@ backend/ → Django + ADRF API
 1. The Django backend serves a REST API at `http://127.0.0.1:8000/api/tasks/`
 2. The React frontend fetches tasks using **RTK Query**
 3. Redux Toolkit handles caching, loading states, and mutations
-4. Users can add, view, and delete tasks — fully synced with the backend
+4. Users can add, view, and delete tasks  fully synced with the backend
 
 ---
 
@@ -95,15 +95,18 @@ python manage.py runserver
 ```
 
 ## Frontend Setup (Vite + Redux Toolkit + TypeScript)
-### 1. Create a new Vite + React + TypeScript app
+
+```bash
+# 1. Create a new Vite + React + TypeScript app
 npm create vite@latest frontend -- --template react-ts
 cd frontend
 
-### 2. Install dependencies
+# 2. Install dependencies
 npm install @reduxjs/toolkit react-redux axios
 
-### 3. Start the development server
+# 3. Start the development server
 npm run dev
+```
 
 
 ## Frontend runs on:
@@ -165,14 +168,23 @@ taskflow/
     └── package.json
 
 
+
+
 ##  How It Works (Simplified)
 User opens the React frontend
+
 The app requests data from the Django API (GET /api/tasks/)
+
 Tasks are stored in Redux Toolkit state via RTK Query
+
 When a user adds a new task:
+
 The frontend sends a POST request
+
 The backend saves it to the database
+
 RTK Query automatically updates the cache
+
 The page updates instantly without manual reload
 
 ### Example Flow
@@ -201,15 +213,13 @@ Add tasks, delete them, and see everything update live!
 
 Mairo Gospel
 Data Engineer / DevOps Engineer
-📧 [your-email@example.com
-]
-🌍 LinkedIn
- • GitHub
+📧 [gospelmairo@gmail.com]
+
 
 
 ## Summary
 
-TaskFlow is a proof-of-concept app demonstrating full-stack development skills — showing your ability to:
+TaskFlow is a proof of concept app demonstrating full stack development skills showing my ability to:
 
 Build and expose APIs using Django & ADRF
 
