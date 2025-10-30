@@ -217,7 +217,7 @@ Add tasks, delete them, and see everything update live!
 Mairo Gospel
 Data Engineer / DevOps Engineer
 📧 [gospelmairo@gmail.com]
-
+---
 
 
 ## Summary
