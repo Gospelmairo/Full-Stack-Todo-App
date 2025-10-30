@@ -149,7 +149,9 @@ export const { useGetTasksQuery, useAddTaskMutation, useDeleteTaskMutation } = a
 This setup allows automatic caching, re-fetching, and optimistic updates — no manual state management required.
 ---
 
+
 ##  Folder Structure
+```bash
 taskflow/
 ├── backend/
 │   ├── backend/
@@ -167,7 +169,7 @@ taskflow/
     │   └── main.tsx
     ├── index.html
     └── package.json
-
+```
 
 
 
