@@ -1,6 +1,6 @@
 # Full Stack Todo App
 
-# ✅ TaskFlow — Full-Stack Task Management App
+# TaskFlow — Full-Stack Task Management App
 
 TaskFlow is a minimalist full stack **task management app** built to demonstrate a clean architecture between an **async Django backend (via ADRF)** and a **modern React + Vite + TypeScript frontend** using **Redux Toolkit Query** for data fetching and caching.
 
